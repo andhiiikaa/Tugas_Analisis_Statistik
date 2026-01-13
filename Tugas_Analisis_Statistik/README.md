@@ -59,9 +59,9 @@ Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan has
 
 -   **Ukuran Sebaran (Standar Deviasi, Range, Kuartil):**
 
-    -   Nilai standar deviasi dari data pendapatan adalah 19,75, dengan range data dari 1 hingga 66,89. Kuartil pertama (Q1) sebesar 14,37, median (Q2) sebesar 31,47, dan kuartil ketiga (Q3) sebesar 49,12.
+    -   Data pendapatan menunjukkan tingkat penyebaran yang cukup tinggi dengan nilai standar deviasi sebesar 19,75. Nilai pendapatan terendah berada pada angka 1, sedangkan nilai tertinggi mencapai 66,89. Berdasarkan ukuran kuartil, 25% data berada di bawah 14,37 (Q1), nilai tengah data berada pada 31,47 (median), dan 75% data berada di bawah 49,12 (Q3).
 
-    -   *Interpretasi:* Nilai standar deviasi dari data pendapatan adalah 19,75, dengan range data dari 1 hingga 66,89. Kuartil pertama (Q1) sebesar 14,37, median (Q2) sebesar 31,47, dan kuartil ketiga (Q3) sebesar 49,12.
+    -   *Interpretasi:* Data pendapatan memiliki standar deviasi sebesar 19,75, dengan nilai minimum 1 dan nilai maksimum 66,89. Berdasarkan distribusi kuartil, kuartil pertama bernilai 14,37, nilai median berada pada 31,47, dan kuartil ketiga mencapai 49,12.
 
 -   **Visualisasi (Histogram/Boxplot):**
 
@@ -69,7 +69,7 @@ Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan has
 
     ![](results/boxplot_Pendapatan_Tahunan_Miliar_IDR.png)
 
-    -   *Interpretasi:* Histogram menunjukkan bahwa data pendapatan tersebar di berbagai rentang nilai dan tidak membentuk pola distribusi normal. Boxplot juga memperlihatkan bahwa data memiliki rentang yang cukup lebar dengan median berada di sekitar tengah, yang menunjukkan variasi data yang cukup tinggi dan tidak terlalu condong ke salah satu sisi.
+    -   *Interpretasi:* Histogram memperlihatkan bahwa data pendapatan tersebar pada berbagai interval nilai dan tidak mengikuti pola distribusi normal. Sementara itu, boxplot menunjukkan rentang data yang relatif luas dengan posisi median berada di sekitar bagian tengah, yang mengindikasikan tingkat variasi data yang cukup tinggi serta tidak adanya kecenderungan distribusi ke satu sisi tertentu.
 
 ### 5.2. Uji Normalitas
 
@@ -97,8 +97,8 @@ Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan has
 
     ![](results/scatterplot_Nilai_Pelanggan_Juta_IDR_vs_Pendapatan_Tahunan_Miliar_IDR.png)
 
-    -   *Interpretasi:* Scatter plot menunjukkan pola hubungan yang jelas dan meningkat antara variabel Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR. Pola ini mendukung hasil uji korelasi yang menunjukkan hubungan positif yang sangat kuat antara kedua variabel.
-
+    -   *Interpretasi:* Scatter plot memperlihatkan adanya pola hubungan yang jelas dan cenderung meningkat antara variabel Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR. Pola tersebut sejalan dengan hasil uji korelasi yang menunjukkan adanya hubungan positif yang sangat kuat antara kedua variabel.
+      
 ### 5.4. Analisis Regresi
 
 -   **Model Regresi:**
@@ -111,20 +111,21 @@ Di bagian ini, mahasiswa diharapkan untuk menyajikan dan menginterpretasikan has
 
     -   *Nilai R-squared:* Nilai Adjusted R-squared dari model regresi adalah sebesar 0,994 atau 99,4%.
 
-    -   *Interpretasi:* Nilai tersebut menunjukkan bahwa sebesar 99,4% variasi pada variabel Pendapatan_Tahunan_Miliar_IDR dapat dijelaskan oleh variabel Nilai_Pelanggan_Juta_IDR melalui model regresi linear ini.
+    -   *Interpretasi:* Nilai tersebut mengindikasikan bahwa sekitar 99,4% variasi pada Pendapatan_Tahunan_Miliar_IDR dapat diterangkan oleh Nilai_Pelanggan_Juta_IDR melalui model regresi linear yang digunakan.
 
 -   **Visualisasi (Garis Regresi pada Scatter Plot):**
 
     ![](results/plot_regresi_Nilai_Pelanggan_Juta_IDR_vs_Pendapatan_Tahunan_Miliar_IDR.png)
 
-    -   *Interpretasi:* Garis regresi mengikuti sebaran data antara variabel Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR dengan sangat baik, yang menunjukkan bahwa model regresi linear mampu merepresentasikan hubungan kedua variabel secara akurat.
+    -   *Interpretasi:* Garis regresi terlihat menyesuaikan pola sebaran data antara variabel Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR secara sangat baik, sehingga menunjukkan bahwa model regresi linear mampu menggambarkan hubungan antara kedua variabel tersebut dengan tingkat akurasi yang tinggi.
 
 ## 6. Kesimpulan
 
-Berdasarkan hasil analisis yang telah dilakukan, variabel Pendapatan_Tahunan_Miliar_IDR memiliki nilai mean dan median yang relatif seimbang, yang menunjukkan bahwa data pendapatan tidak terlalu condong ke satu sisi, namun memiliki variasi yang cukup tinggi antar startup yang terlihat dari nilai standar deviasi dan rentang data yang lebar.
+Berdasarkan hasil pengolahan data, variabel Pendapatan_Tahunan_Miliar_IDR memiliki nilai rata-rata dan median yang relatif berdekatan, sehingga menunjukkan bahwa distribusi pendapatan tidak menunjukkan kemencengan yang ekstrem ke salah satu arah. Namun demikian, perbedaan pendapatan antar startup tergolong besar, sebagaimana tercermin dari nilai standar deviasi yang tinggi serta rentang data yang luas.
 
-Hasil uji normalitas Shapiro-Wilk serta Q-Q plot menunjukkan bahwa data pendapatan tidak terdistribusi normal secara statistik.
+Pengujian normalitas menggunakan metode Shapiro–Wilk yang diperkuat dengan visualisasi Q–Q plot mengindikasikan bahwa data pendapatan secara statistik tidak mengikuti distribusi normal.
 
-Selanjutnya, analisis korelasi Pearson menunjukkan adanya hubungan positif yang sangat kuat antara variabel Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR, yang berarti peningkatan nilai pelanggan diikuti oleh peningkatan pendapatan tahunan.
+Selanjutnya, hasil analisis korelasi Pearson menunjukkan adanya hubungan positif yang sangat kuat antara Nilai_Pelanggan_Juta_IDR dan Pendapatan_Tahunan_Miliar_IDR, yang mengimplikasikan bahwa peningkatan nilai pelanggan cenderung diikuti oleh kenaikan pendapatan tahunan.
 
-Hasil analisis regresi linear juga menunjukkan bahwa Nilai_Pelanggan_Juta_IDR memiliki pengaruh yang sangat besar terhadap Pendapatan_Tahunan_Miliar_IDR, di mana model regresi mampu menjelaskan sebesar 99,4% variasi pendapatan tahunan, sehingga model yang dibangun dapat dikatakan sangat baik dalam merepresentasikan hubungan antara kedua variabel.
+Temuan tersebut diperkuat melalui analisis regresi linear, di mana variabel Nilai_Pelanggan_Juta_IDR terbukti memberikan pengaruh yang sangat signifikan terhadap Pendapatan_Tahunan_Miliar_IDR. Model regresi yang dihasilkan mampu menjelaskan sekitar 99,4% variasi pendapatan tahunan, sehingga dapat disimpulkan bahwa model tersebut sangat representatif dalam menggambarkan hubungan antara kedua variabel.
+
